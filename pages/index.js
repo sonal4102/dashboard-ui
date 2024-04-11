@@ -1,3 +1,4 @@
+import BannerCard from "@/components/BannerCard";
 import CustomChart from "@/components/CustomChart";
 import Header from "@/components/Header";
 import TableWithPagination from "@/components/TableWithPagination";
@@ -120,6 +121,7 @@ export default function Home() {
 		<main>
 			<Header />
 			<div className="flex flex-col overflow-y-scroll h-[85vh]">
+				<div className="lg:p-5  "> <BannerCard/></div>
 				<div className="lg:p-5  px-3"> <CustomChart/></div>
 				<div className="lg:p-5  "> <TableWithPagination data={data} itemsPerPage={5} /></div>
 				
