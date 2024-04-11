@@ -10,9 +10,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [create-next-
 Install dependencies:
 npm install
 
-First, run the development server:
-
-bash
+First, run 
 npm run dev
 
 
