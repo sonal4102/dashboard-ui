@@ -37,7 +37,7 @@ const TableWithPagination = ({ data, itemsPerPage }) => {
 					<tbody className="text-sm font-medium text-gray-500 ">
 						{currentItems.map((item, index) => (
 							<tr key={index}>
-								<td className="flex flex-wrap border lg:flex lg:items-center lg:space-x-3 px-4 py-2 2xl:h-[48px]">
+								<td className="flex flex-wrap border lg:flex lg:items-center lg:space-x-3 px-4 py-2 ">
 									<img
 										src={item.icon}
 										width={40}

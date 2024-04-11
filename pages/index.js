@@ -122,7 +122,7 @@ export default function Home() {
 	const cardData = [
 		{ name: "Revenue", price: "$56,945" , percentage: "+45%" },
 		{ name: "Users", price: "76.8%", percentage: "-1.7%" },
-		{ name: "New Signups", price: "116", percentage: "0%" },
+		{ name: "New Signups", price: "116", percentage: "0.00" },
 			{ name: "Retention", price: "12.67%", percentage: "+0.6%" },
 	];
 
@@ -130,11 +130,11 @@ export default function Home() {
 		<main>
 			<Header />
 			<div className="flex flex-col overflow-y-scroll h-[85vh]">
-				<div className="lg:p-5  ">
+				<div className="p-5  ">
 					{" "}
 					<BannerCard />
 				</div>
-				<div className="lg:p-5  ">
+				<div className="p-5  ">
 					{" "}
 					<div className="grid grid-cols-1 lg:grid-cols-4 gap-4">
 						{cardData.map((data, index) => (
@@ -147,7 +147,7 @@ export default function Home() {
 						))}
 					</div>
 				</div>
-				<div className="lg:p-5  px-3">
+				<div className="lg:p-5  px-5">
 					{" "}
 					<CustomChart />
 				</div>

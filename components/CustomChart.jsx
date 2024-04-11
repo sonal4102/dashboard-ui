@@ -51,7 +51,7 @@ const CustomChart = () => {
 	return (
 		<>
 			{" "}
-			<h1 className="font-semibold text-xl mb-5">Performance </h1>{" "}
+			<h1 className="font-semibold text-xl mb-5 lg:mt-0 mt-5">Performance </h1>{" "}
 			<HighchartsReact highcharts={Highcharts} options={options} />
 		</>
 	);

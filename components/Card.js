@@ -2,7 +2,7 @@ import React from "react";
 
 function Card({ name, price, percentage }) {
 	let bgColor = "";
-	if (percentage === "0%") {
+	if (percentage === "0.00") {
 		bgColor = "bg-gray-300 text-gray-600";
 	} else {
 		const isPositive = percentage.charAt(0) === "+";
@@ -21,7 +21,7 @@ function Card({ name, price, percentage }) {
 				>
 					{percentage}
 				</p>
-				<p className="text-gray-600 text-sm">From 4.6%</p>
+       { (percentage!="0.00") && <p className="text-gray-600 text-sm">From 4.6%</p> }
 			</div>
 		</div>
 	);
