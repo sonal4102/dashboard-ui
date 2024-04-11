@@ -74,10 +74,10 @@ const Sidebar = ({ children }) => {
 						IconComponent={FiUser}
 					>
 						<Link href="/">
-							<a className="block py-1">Personal</a>
+							<span className="block py-1">Personal</span>
 						</Link>
 						<Link href="/">
-							<a className="block py-1">Wishlist</a>
+							<span className="block py-1">Wishlist</span>
 						</Link>
 					</DropdownSection>
 					<DropdownSection
@@ -85,10 +85,10 @@ const Sidebar = ({ children }) => {
 						IconComponent={IoIosApps}
 					>
 						<Link href="/">
-							<a className="block py-1">Account settings</a>
+							<span className="block py-1">Account settings</span>
 						</Link>
 						<Link href="/">
-							<a className="block py-1">App settings</a>
+							<span className="block py-1">App settings</span>
 						</Link>
 					</DropdownSection>
 					 <h1 className="text-gray-400  pl-4 my-2 uppercase tracking-widest">Pages</h1>
