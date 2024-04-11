@@ -63,7 +63,11 @@ const Sidebar = ({ children }) => {
 					sidebarOpen ? "translate-x-0" : "-translate-x-full"
 				} lg:translate-x-0`}
 			>
-				
+				<div className="lg:hidden text-right">
+					<button onClick={handleSidebar}>
+						<RiCloseLine size={30} />
+					</button>
+				</div>
 				<div className="flex flex-col items-start pt-3 lg:pt-0 ">
 					<Link href="/" className="">
 						<div className="mb-4 px-3 text-center cursor-pointer items-center space-x-3">
