@@ -51,8 +51,8 @@ const Sidebar = ({ children }) => {
 	return (
 		<div className="flex">
 			{/* Mobile Menu Icon */}
-			<div className="lg:hidden fixed top-0 left-0 z-20">
-				<button className="p-6" onClick={handleSidebar}>
+			<div className="lg:hidden fixed top-0 right-0 z-20">
+				<button className="p-3" onClick={handleSidebar}>
 					<IoMdMenu size={30} />
 				</button>
 			</div>
@@ -63,14 +63,9 @@ const Sidebar = ({ children }) => {
 					sidebarOpen ? "translate-x-0" : "-translate-x-full"
 				} lg:translate-x-0`}
 			>
-				<div className="lg:hidden text-right">
-					<button onClick={handleSidebar}>
-						<RiCloseLine size={44} />
-					</button>
-				</div>
-
-				<div className="flex flex-col items-start pt-8 lg:pt-0">
-					<Link href="/" className="lg:block hidden">
+				
+				<div className="flex flex-col items-start pt-3 lg:pt-0">
+					<Link href="/" className="">
 						<div className="mb-4 px-3 text-center cursor-pointer items-center space-x-3">
 							<RxSketchLogo
 								size={40}
