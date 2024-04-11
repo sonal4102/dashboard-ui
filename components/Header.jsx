@@ -10,7 +10,7 @@ import {
 
 const Header = () => {
 	return (
-		<div className="flex justify-between items-center px-4 lg:py-5 py-3 bg-white ">
+		<div className="flex justify-between items-center px-4 lg:py-5 py-3 bg-gray-200">
 			<div>
 				<Link href="/" className="lg:hidden">
 					<div className=" text-center cursor-pointer  flex items-center space-x-3">

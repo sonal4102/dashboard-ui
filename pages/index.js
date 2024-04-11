@@ -1,3 +1,4 @@
+import CustomChart from "@/components/CustomChart";
 import Header from "@/components/Header";
 import TableWithPagination from "@/components/TableWithPagination";
 import { FiFigma, FiHome } from "react-icons/fi";
@@ -114,10 +115,12 @@ export default function Home() {
 			amount: "176.00",
 		}
 	];
+
 	return (
 		<main>
 			<Header />
-			<div className="flex flex-col space-y-5 lg:bg-black">
+			<div className="flex flex-col overflow-y-scroll h-[85vh]">
+				<div className="lg:p-5  px-3"> <CustomChart/></div>
 				<div className="lg:p-5  "> <TableWithPagination data={data} itemsPerPage={5} /></div>
 				
 			</div>

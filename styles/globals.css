@@ -8,3 +8,11 @@ body {
   font-family: "Poppins", sans-serif;
   /* background-color: #000000; */
 }
+
+.highcharts-title{
+  display: none;
+}
+
+.highcharts-credits{
+    display: none;
+}

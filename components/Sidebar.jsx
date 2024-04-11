@@ -49,7 +49,7 @@ const Sidebar = ({ children }) => {
 	};
 
 	return (
-		<div className="flex">
+		<div className="flex ">
 			{/* Mobile Menu Icon */}
 			<div className="lg:hidden absolute top-0 right-0 z-20">
 				<button className="p-3" onClick={handleSidebar}>
@@ -59,12 +59,12 @@ const Sidebar = ({ children }) => {
 
 			{/* Sidebar */}
 			<div
-				className={`fixed  z-99 w-64 h-full overflow-y-auto p-4 bg-white border-r transition transform duration-300 ease-in-out ${
+				className={`fixed z-99 w-64 h-full overflow-y-auto p-4 bg-white border-r transition transform duration-300 ease-in-out ${
 					sidebarOpen ? "translate-x-0" : "-translate-x-full"
 				} lg:translate-x-0`}
 			>
 				
-				<div className="flex flex-col items-start pt-3 lg:pt-0">
+				<div className="flex flex-col items-start pt-3 lg:pt-0 ">
 					<Link href="/" className="">
 						<div className="mb-4 px-3 text-center cursor-pointer items-center space-x-3">
 							<RxSketchLogo

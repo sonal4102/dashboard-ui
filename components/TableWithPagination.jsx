@@ -16,7 +16,7 @@ const TableWithPagination = ({ data, itemsPerPage }) => {
 
 	return (
         <div className="flex flex-col bg-white px-5 pt-2  rounded rounded-3xl ">
-            <h1 className="font-semibold py-3">Installed Apps </h1>
+            <h1 className="font-semibold text-xl mb-5">Installed Apps </h1>
 			<div className="overflow-x-auto ">
                 <table className="min-w-full  border-t  border-gray-300 ">
                     
